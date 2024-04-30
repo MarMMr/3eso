@@ -48,13 +48,13 @@ public class PreguntaFacil extends javax.swing.JFrame {
         jButtonAceptarPreguntas = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextFieldRespuestaSumaMulti = new javax.swing.JTextField();
-        signo = new javax.swing.JLabel();
+        signo2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabelnum1 = new javax.swing.JLabel();
         jLabelnum6 = new javax.swing.JLabel();
         signo1 = new javax.swing.JLabel();
         jTextFieldRespuestaRestaDivi = new javax.swing.JTextField();
-        signo2 = new javax.swing.JLabel();
+        signo5 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabelnum9div2 = new javax.swing.JLabel();
         jTextFieldRespuestaDiviMulti = new javax.swing.JTextField();
@@ -64,7 +64,7 @@ public class PreguntaFacil extends javax.swing.JFrame {
         jLabelnum5div1 = new javax.swing.JLabel();
         jLabelnum2 = new javax.swing.JLabel();
         signo4 = new javax.swing.JLabel();
-        signo5 = new javax.swing.JLabel();
+        signo6 = new javax.swing.JLabel();
         jLabelnum3 = new javax.swing.JLabel();
         jLabelnum7resta1 = new javax.swing.JLabel();
         jLabelnum8div2 = new javax.swing.JLabel();
@@ -90,9 +90,9 @@ public class PreguntaFacil extends javax.swing.JFrame {
             }
         });
 
-        signo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo.setText("x");
+        signo2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        signo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        signo2.setText("x");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel3.setText("=");
@@ -112,9 +112,9 @@ public class PreguntaFacil extends javax.swing.JFrame {
             }
         });
 
-        signo2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo2.setText("-");
+        signo5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        signo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        signo5.setText("-");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel5.setText("=");
@@ -145,9 +145,9 @@ public class PreguntaFacil extends javax.swing.JFrame {
         signo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         signo4.setText("x");
 
-        signo5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo5.setText("/");
+        signo6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        signo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        signo6.setText("/");
 
         jLabelnum3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
@@ -176,7 +176,7 @@ public class PreguntaFacil extends javax.swing.JFrame {
                                         .addGap(150, 150, 150)
                                         .addComponent(jTextFieldRespuestaSumaMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(signo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(10, 10, 10)
                                         .addComponent(jLabelnum3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(10, 10, 10)
@@ -185,11 +185,11 @@ public class PreguntaFacil extends javax.swing.JFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabelnum7resta1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10)
-                                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10)
                                     .addComponent(jLabelnum8div2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10)
-                                    .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(signo6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10)
                                     .addComponent(jLabelnum9div2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10)
@@ -227,7 +227,7 @@ public class PreguntaFacil extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabelnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(signo1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldRespuestaSumaMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelnum2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -251,13 +251,13 @@ public class PreguntaFacil extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelnum9div2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(signo6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jTextFieldRespuestaRestaDivi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(1, 1, 1)))
                     .addComponent(jLabelnum7resta1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelnum8div2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(jButtonAceptarPreguntas)
@@ -435,11 +435,11 @@ public class PreguntaFacil extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldRespuestaDiviMulti;
     private javax.swing.JTextField jTextFieldRespuestaRestaDivi;
     private javax.swing.JTextField jTextFieldRespuestaSumaMulti;
-    private javax.swing.JLabel signo;
     private javax.swing.JLabel signo1;
     private javax.swing.JLabel signo2;
     private javax.swing.JLabel signo3;
     private javax.swing.JLabel signo4;
     private javax.swing.JLabel signo5;
+    private javax.swing.JLabel signo6;
     // End of variables declaration//GEN-END:variables
 }

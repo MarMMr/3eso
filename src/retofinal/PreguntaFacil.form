@@ -45,7 +45,7 @@
                                       <Component id="jTextFieldRespuestaSumaMulti" min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="signo" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="signo2" min="-2" pref="40" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Component id="jLabelnum3" min="-2" pref="40" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -57,11 +57,11 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabelnum7resta1" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                  <Component id="signo2" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="signo5" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="jLabelnum8div2" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                  <Component id="signo5" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="signo6" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="jLabelnum9div2" min="-2" pref="42" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -109,7 +109,7 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jLabelnum1" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="signo1" min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="signo" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="signo2" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="jTextFieldRespuestaSumaMulti" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="jLabelnum2" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
@@ -139,7 +139,7 @@
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Component id="jLabelnum9div2" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="signo5" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="signo6" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -148,7 +148,7 @@
                       </Group>
                   </Group>
                   <Component id="jLabelnum7resta1" min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="signo2" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="signo5" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="jLabelnum8div2" min="-2" pref="60" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="68" max="32767" attributes="0"/>
@@ -185,7 +185,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRespuestaSumaMultiActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="signo">
+    <Component class="javax.swing.JLabel" name="signo2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="0"/>
@@ -235,7 +235,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRespuestaRestaDiviActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="signo2">
+    <Component class="javax.swing.JLabel" name="signo5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="0"/>
@@ -316,7 +316,7 @@
         <Property name="text" type="java.lang.String" value="x"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="signo5">
+    <Component class="javax.swing.JLabel" name="signo6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="0"/>
