@@ -361,46 +361,26 @@ public class PreguntaMedio extends javax.swing.JFrame {
 
     private void actualizarLabel() {
         Random r1 = new Random();
-        boolean verificado = false;
         
         //primera raiz
-        int num1 = r1.nextInt(50) + 1;
-        int num2 = r1.nextInt(30) + 1;
-        int num3 = r1.nextInt(40) + 1;
-        String label1 = "" + num1;
-        String label2 = "" + num2;
-        String label3 = "" + num2;
+        int num1 = generaRaiz(50, r1.nextInt(250) + 1);
+        int num2 = generaRaiz(30, r1.nextInt(230) + 1);
+        int num3 = generaRaiz(40, r1.nextInt(240) + 1);
+        int num4 = generaRaiz(20, r1.nextInt(210) + 1);
+        String label1 = "√" + num1;
+        String label2 = "√" + num2;
+        String label3 = "√" + num2;
+        String label4 = "√" + num4;
         
-        //segunda operacion, l4/l5*l6
-        int num4;
-        int num5;
-        do {
-            num4 = r1.nextInt(500) + 1;
-            num5 = r1.nextInt(100) + 1;
-            if (num4 % num5 == 0) {
-                verificado = true;
-            }
-        } while (!verificado);
-        int num6 = r1.nextInt(40) + 1;
-        String label4 = "" + num4;
-        String label5 = "" + num5;
-        String label6 = "" + num6;
+            int num5 = generaRaiz(45, r1.nextInt(220) + 1);
+        int num6 = generaRaiz(40, r1.nextInt(215) + 1);
+        String label5 = "√" + num5;
+        String label6 = "√" + num6;
         
-        //tercera operacion, l7-l8/l9
-        int num7 = r1.nextInt(50) + 1;
-        int num8;
-        int num9;
-        do {
-            verificado = false;
-            num8 = r1.nextInt(500) + 1;
-            num9 = r1.nextInt(100) + 1;
-            if (num8 % num9 == 0) {
-                verificado = true;
-            }
-        } while (!verificado);
-        String label7 = "" + num7;
-        String label8 = "" + num8;
-        String label9 = "" + num9;
+        int num7 = generaRaiz(36, r1.nextInt(100) + 1);
+        int num8 = generaRaiz(25, r1.nextInt(140) + 1);
+        String label7 = "√" + num7;
+        String label8 = "√" + num8;
         
         //coversion de los label
         //primera raiz sola
@@ -430,25 +410,23 @@ public class PreguntaMedio extends javax.swing.JFrame {
     }
     
     public static int generaRaiz(int min, int max) {
-	Random rand = new Random();
-	int numRand;
-	int perfectSquare = 0;
+            Random rand = new Random();
+            int numRand;
+            int raizExacta = 0;
 
-	do {
-            // Genera un número aleatorio dentro del rango especificado
-            numRand = rand.nextInt(max - min + 1) + min;
-            // Comprueba si la raíz cuadrada es un número entero
-            if (esRaizExacta(numRand)) {
-                    perfectSquare = numRand;
-            }
-	} while (perfectSquare == 0);
+            do {
+                    numRand = rand.nextInt(max - min + 1) + min;
+                    if (esRaizExacta(numRand)) {
+                                    raizExacta = numRand;
+                    }
+            } while (raizExacta == 0);
 
-	return perfectSquare;
+            return raizExacta;
     }
-    
+
     public static boolean esRaizExacta(int n) {
-	int sqrt = (int) Math.sqrt(n);
-	return sqrt * sqrt == n;
+            int sqrt = (int) Math.sqrt(n);
+            return sqrt * sqrt == n;
     }
 
     private void jTextFieldRespuestaRaizSola2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRaizSola2ActionPerformed

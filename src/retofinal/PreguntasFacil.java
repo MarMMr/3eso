@@ -27,7 +27,7 @@ public class PreguntasFacil {
 
     public PreguntasFacil() {
         do{
-            num4 = n1.nextInt(500)+1;
+            num4 = n1.nextInt(300)+1;
             num5 = n2.nextInt(100)+1;
             if (num4 % num5 == 0) {
                 verificar = true;
@@ -36,7 +36,7 @@ public class PreguntasFacil {
         
         do{
             verificar = false;
-            num8 = n1.nextInt(500)+1;
+            num8 = n1.nextInt(200)+1;
             num9 = n2.nextInt(100)+1;
             if (num8 % num9 == 0) {
                 verificar = true;
