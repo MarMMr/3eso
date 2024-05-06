@@ -17,18 +17,20 @@ public class PreguntaMedio extends javax.swing.JFrame {
      * Creates new form Preguntas
      */
     private PreguntasFacil p = new PreguntasFacil();
+    //Datos primera pregunta
     private String numero1 = "√" + p.getNum1();
     private String numero2 = "√" + p.getNum2();
     private String numero3 = "√" + p.getNum3();
-
     private String numero4 = "√" + p.getNum4();
+    
+    //Datos segunda pregunta
     private String numero5 = "√" + p.getNum5();
     private String numero6 = "√" + p.getNum6();
-
+    
+    //Datos tercera pregunta
     private String numero7 = "√" + p.getNum7();
     private String numero8 = "√" + p.getNum8();
-    private String numero9 = "√" + p.getNum9();
-
+    
     private int acu = 0;
 
     public PreguntaMedio() {
@@ -305,9 +307,12 @@ public class PreguntaMedio extends javax.swing.JFrame {
     }
 
     private void jButtonAceptarPreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarPreguntasActionPerformed
-        String result1Usu = jTextFieldRespuestaRaizSola2.getText();
-        String result2Usu = jTextFieldRespuestaSuma.getText();
-        String result3Usu = jTextFieldRespuestaDivi.getText();
+        String result1Usu = jTextFieldRespuestaRaizSola1.getText();
+        String result2Usu = jTextFieldRespuestaRaizSola2.getText();
+        String result3Usu = jTextFieldRespuestaRaizSola3.getText();
+        String result4Usu = jTextFieldRespuestaRaizSola4.getText();
+        String result5Usu = jTextFieldRespuestaSuma.getText();
+        String result6Usu = jTextFieldRespuestaDivi.getText();
 
         //para obtener el result1Usu aleatorio
         String label1 = jLabelRaizSola1.getText();
@@ -322,30 +327,40 @@ public class PreguntaMedio extends javax.swing.JFrame {
         String label8 = jLabelSegundaRaizMulti.getText();
 
         //string a entero
-        
+        // Raices solas
         int p1 = Integer.parseInt(quitarSimboloRaiz(label1));
         int p2 = Integer.parseInt(quitarSimboloRaiz(label2));
         int p3 = Integer.parseInt(quitarSimboloRaiz(label3));
         int p4 = Integer.parseInt(quitarSimboloRaiz(label4));
-        
+        // Raices suma
         int p5 = Integer.parseInt(quitarSimboloRaiz(label5));
         int p6 = Integer.parseInt(quitarSimboloRaiz(label6));
-
+        // Raices multiplicacion
         int p7 = Integer.parseInt(quitarSimboloRaiz(label7));
         int p8 = Integer.parseInt(quitarSimboloRaiz(label8));
 
         //obtener respuesta1Usuario
+        // respuestas raices solas
         int respuesta1Usuario = Integer.parseInt(result1Usu);
         int respuesta2Usuario = Integer.parseInt(result2Usu);
         int respuesta3Usuario = Integer.parseInt(result3Usu);
+        int respuesta4Usuario = Integer.parseInt(result1Usu);
+        // Respuestas operaciones
+        int respuesta5Usuario = Integer.parseInt(result2Usu);
+        int respuesta6Usuario = Integer.parseInt(result3Usu);
 
         //verificar
-        int respCorrecta1 = p2 * p3 + p1;
-        int respCorrecta2 = p4 / p5 * p6;
-        int respCorrecta3 = p7 - p8;
+        int respCorrecta1 = (int) Math.sqrt(p1);
+        int respCorrecta2 = (int) Math.sqrt(p2);
+        int respCorrecta3 = (int) Math.sqrt(p3);
+        int respCorrecta4 = (int) Math.sqrt(p4);
+        int respCorrecta5 = (int) Math.sqrt(p5) + (int) Math.sqrt(p6);
+        int respCorrecta6 = (int) Math.sqrt(p7) * (int) Math.sqrt(p8);
 
-        if (respuesta1Usuario == respCorrecta1 && respuesta2Usuario == respCorrecta2
-                && respuesta3Usuario == respCorrecta3) {
+        if (respuesta1Usuario == respCorrecta1 && respuesta2Usuario == 
+                respCorrecta2 && respuesta3Usuario == respCorrecta3 && 
+                respuesta4Usuario == respCorrecta4 && respuesta5Usuario == 
+                respCorrecta5 && respuesta6Usuario == respCorrecta6) {
             JOptionPane.showMessageDialog(this, "respuesta correcta");
             actualizarLabel();
         } else {
@@ -372,7 +387,7 @@ public class PreguntaMedio extends javax.swing.JFrame {
         String label3 = "√" + num2;
         String label4 = "√" + num4;
         
-            int num5 = generaRaiz(45, r1.nextInt(220) + 1);
+        int num5 = generaRaiz(45, r1.nextInt(220) + 1);
         int num6 = generaRaiz(40, r1.nextInt(215) + 1);
         String label5 = "√" + num5;
         String label6 = "√" + num6;
