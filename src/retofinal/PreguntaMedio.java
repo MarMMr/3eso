@@ -17,17 +17,17 @@ public class PreguntaMedio extends javax.swing.JFrame {
      * Creates new form Preguntas
      */
     private PreguntasFacil p = new PreguntasFacil();
-    private String numero1 = "" + p.getNum1();
-    private String numero2 = "" + p.getNum2();
-    private String numero3 = "" + p.getNum3();
+    private String numero1 = "√" + p.getNum1();
+    private String numero2 = "√" + p.getNum2();
+    private String numero3 = "√" + p.getNum3();
 
-    private String numero4 = "" + p.getNum4();
-    private String numero5 = "" + p.getNum5();
-    private String numero6 = "" + p.getNum6();
+    private String numero4 = "√" + p.getNum4();
+    private String numero5 = "√" + p.getNum5();
+    private String numero6 = "√" + p.getNum6();
 
-    private String numero7 = "" + p.getNum7();
-    private String numero8 = "" + p.getNum8();
-    private String numero9 = "" + p.getNum9();
+    private String numero7 = "√" + p.getNum7();
+    private String numero8 = "√" + p.getNum8();
+    private String numero9 = "√" + p.getNum9();
 
     private int acu = 0;
 
@@ -47,27 +47,28 @@ public class PreguntaMedio extends javax.swing.JFrame {
 
         jButtonAceptarPreguntas = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextFieldRespuestaSumaMulti = new javax.swing.JTextField();
-        signo = new javax.swing.JLabel();
+        jTextFieldRespuestaRaizSola2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabelnum1 = new javax.swing.JLabel();
-        jLabelnum6 = new javax.swing.JLabel();
-        signo1 = new javax.swing.JLabel();
-        jTextFieldRespuestaRestaDivi = new javax.swing.JTextField();
+        jTextFieldRespuestaDivi = new javax.swing.JTextField();
         signo2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabelnum9div2 = new javax.swing.JLabel();
-        jTextFieldRespuestaDiviMulti = new javax.swing.JTextField();
-        signo3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabelnum4div1 = new javax.swing.JLabel();
-        jLabelnum5div1 = new javax.swing.JLabel();
-        jLabelnum2 = new javax.swing.JLabel();
-        signo4 = new javax.swing.JLabel();
-        signo5 = new javax.swing.JLabel();
-        jLabelnum3 = new javax.swing.JLabel();
-        jLabelnum7resta1 = new javax.swing.JLabel();
-        jLabelnum8div2 = new javax.swing.JLabel();
+        igual6 = new javax.swing.JLabel();
+        jTextFieldRespuestaSuma = new javax.swing.JTextField();
+        signo1 = new javax.swing.JLabel();
+        igual5 = new javax.swing.JLabel();
+        jLabelPrimeraRaizSuma = new javax.swing.JLabel();
+        jLabelSegundaRaizSuma = new javax.swing.JLabel();
+        jLabelPrimeraRaizMulti = new javax.swing.JLabel();
+        jLabelSegundaRaizMulti = new javax.swing.JLabel();
+        jLabelRaizSola1 = new javax.swing.JLabel();
+        igual1 = new javax.swing.JLabel();
+        jTextFieldRespuestaRaizSola1 = new javax.swing.JTextField();
+        jLabelRaizSola2 = new javax.swing.JLabel();
+        igual3 = new javax.swing.JLabel();
+        jTextFieldRespuestaRaizSola3 = new javax.swing.JTextField();
+        jLabelRaizSola3 = new javax.swing.JLabel();
+        igual4 = new javax.swing.JLabel();
+        jTextFieldRespuestaRaizSola4 = new javax.swing.JTextField();
+        jLabelRaizSola4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CalculESO - Facil");
@@ -83,235 +84,255 @@ public class PreguntaMedio extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Operaciones:");
 
-        jTextFieldRespuestaSumaMulti.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextFieldRespuestaSumaMulti.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldRespuestaRaizSola2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaRaizSola2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldRespuestaSumaMultiActionPerformed(evt);
+                jTextFieldRespuestaRaizSola2ActionPerformed(evt);
             }
         });
-
-        signo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo.setText("x");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel3.setText("=");
 
-        jLabelnum1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-
-        jLabelnum6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-
-        signo1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo1.setText("+");
-
-        jTextFieldRespuestaRestaDivi.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextFieldRespuestaRestaDivi.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldRespuestaDivi.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaDivi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldRespuestaRestaDiviActionPerformed(evt);
+                jTextFieldRespuestaDiviActionPerformed(evt);
             }
         });
 
         signo2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         signo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo2.setText("-");
+        signo2.setText("*");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jLabel5.setText("=");
+        igual6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        igual6.setText("=");
 
-        jLabelnum9div2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-
-        jTextFieldRespuestaDiviMulti.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextFieldRespuestaDiviMulti.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldRespuestaSuma.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaSuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldRespuestaDiviMultiActionPerformed(evt);
+                jTextFieldRespuestaSumaActionPerformed(evt);
             }
         });
 
-        signo3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo3.setText("/");
+        signo1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        signo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        signo1.setText("+");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jLabel6.setText("=");
+        igual5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        igual5.setText("=");
 
-        jLabelnum4div1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelPrimeraRaizSuma.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jLabelnum5div1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelSegundaRaizSuma.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jLabelnum2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelPrimeraRaizMulti.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        signo4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo4.setText("x");
+        jLabelSegundaRaizMulti.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        signo5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        signo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signo5.setText("/");
+        jLabelRaizSola1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jLabelnum3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        igual1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        igual1.setText("=");
 
-        jLabelnum7resta1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaRaizSola1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaRaizSola1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldRespuestaRaizSola1ActionPerformed(evt);
+            }
+        });
 
-        jLabelnum8div2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelRaizSola2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        igual3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        igual3.setText("=");
+
+        jTextFieldRespuestaRaizSola3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaRaizSola3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldRespuestaRaizSola3ActionPerformed(evt);
+            }
+        });
+
+        jLabelRaizSola3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        igual4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        igual4.setText("=");
+
+        jTextFieldRespuestaRaizSola4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextFieldRespuestaRaizSola4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldRespuestaRaizSola4ActionPerformed(evt);
+            }
+        });
+
+        jLabelRaizSola4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabelnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(100, 100, 100)
+                                .addComponent(jTextFieldRespuestaRaizSola1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelRaizSola1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(igual1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(150, 150, 150)
+                        .addComponent(jLabelRaizSola2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldRespuestaRaizSola2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelPrimeraRaizMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabelSegundaRaizMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)
+                                .addComponent(igual6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jTextFieldRespuestaDivi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(jLabelRaizSola4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(4, 4, 4)
+                                .addComponent(igual4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelPrimeraRaizSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
                                 .addComponent(signo1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
-                                .addComponent(jLabelnum2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabelSegundaRaizSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(150, 150, 150)
-                                        .addComponent(jTextFieldRespuestaSumaMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(signo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(igual5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(10, 10, 10)
-                                        .addComponent(jLabelnum3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(10, 10, 10)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabelnum7resta1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabelnum8div2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabelnum9div2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jTextFieldRespuestaRestaDivi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabelnum4div1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(signo3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabelnum5div1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(signo4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabelnum6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jTextFieldRespuestaDiviMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(100, 100, 100))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(jButtonAceptarPreguntas)))
-                .addGap(30, 30, 30))
+                                        .addComponent(jTextFieldRespuestaSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(50, 50, 50)
+                                        .addComponent(jLabelRaizSola3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(igual3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldRespuestaRaizSola3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRespuestaRaizSola4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(215, 215, 215)
+                .addComponent(jButtonAceptarPreguntas)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signo1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldRespuestaSumaMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelnum2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelnum3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRespuestaDiviMulti, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(signo3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelnum4div1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelnum5div1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(signo4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelnum6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jTextFieldRespuestaRaizSola2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabelRaizSola2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(igual1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextFieldRespuestaRaizSola1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabelRaizSola1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(signo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelPrimeraRaizSuma, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelSegundaRaizSuma, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(igual3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabelRaizSola3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextFieldRespuestaRaizSola3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(igual5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTextFieldRespuestaSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelnum9div2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(signo5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jTextFieldRespuestaRestaDivi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(1, 1, 1)))
-                    .addComponent(jLabelnum7resta1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelnum8div2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelPrimeraRaizMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(signo2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(igual6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(igual4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabelRaizSola4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextFieldRespuestaDivi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextFieldRespuestaRaizSola4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(1, 1, 1))))))
+                    .addComponent(jLabelSegundaRaizMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
                 .addComponent(jButtonAceptarPreguntas)
-                .addGap(40, 40, 40))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void iniciarLabel() {
-        jLabelnum1.setText(numero1);
-        jLabelnum2.setText(numero2);
-        jLabelnum3.setText(numero3);
+        jLabelRaizSola1.setText(numero1);
+        jLabelRaizSola2.setText(numero2);
+        jLabelRaizSola3.setText(numero3);
+        jLabelRaizSola4.setText(numero4);
 
-        jLabelnum4div1.setText(numero4);
-        jLabelnum5div1.setText(numero5);
-        jLabelnum6.setText(numero6);
+        jLabelPrimeraRaizSuma.setText(numero5);
+        jLabelSegundaRaizSuma.setText(numero6);
 
-        jLabelnum7resta1.setText(numero7);
-        jLabelnum8div2.setText(numero8);
-        jLabelnum9div2.setText(numero9);
+        jLabelPrimeraRaizMulti.setText(numero7);
+        jLabelSegundaRaizMulti.setText(numero8);
 
     }
 
     private void jButtonAceptarPreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarPreguntasActionPerformed
-        String result1Usu = jTextFieldRespuestaSumaMulti.getText();
-        String result2Usu = jTextFieldRespuestaDiviMulti.getText();
-        String result3Usu = jTextFieldRespuestaRestaDivi.getText();
+        String result1Usu = jTextFieldRespuestaRaizSola2.getText();
+        String result2Usu = jTextFieldRespuestaSuma.getText();
+        String result3Usu = jTextFieldRespuestaDivi.getText();
 
         //para obtener el result1Usu aleatorio
-        String label1 = jLabelnum1.getText();
-        String label2 = jLabelnum2.getText();
-        String label3 = jLabelnum3.getText();
+        String label1 = jLabelRaizSola1.getText();
+        String label2 = jLabelRaizSola2.getText();
+        String label3 = jLabelRaizSola3.getText();
+        String label4 = jLabelRaizSola4.getText();
+        
+        String label5 = jLabelPrimeraRaizSuma.getText();
+        String label6 = jLabelSegundaRaizSuma.getText();
 
-        String label4 = jLabelnum4div1.getText();
-        String label5 = jLabelnum5div1.getText();
-        String label6 = jLabelnum6.getText();
-
-        String label7 = jLabelnum7resta1.getText();
-        String label8 = jLabelnum8div2.getText();
-        String label9 = jLabelnum9div2.getText();
+        String label7 = jLabelPrimeraRaizMulti.getText();
+        String label8 = jLabelSegundaRaizMulti.getText();
 
         //string a entero
-        int p1 = Integer.parseInt(label1);
-        int p2 = Integer.parseInt(label2);
-        int p3 = Integer.parseInt(label3);
+        
+        int p1 = Integer.parseInt(quitarSimboloRaiz(label1));
+        int p2 = Integer.parseInt(quitarSimboloRaiz(label2));
+        int p3 = Integer.parseInt(quitarSimboloRaiz(label3));
+        int p4 = Integer.parseInt(quitarSimboloRaiz(label4));
+        
+        int p5 = Integer.parseInt(quitarSimboloRaiz(label5));
+        int p6 = Integer.parseInt(quitarSimboloRaiz(label6));
 
-        int p4 = Integer.parseInt(label4);
-        int p5 = Integer.parseInt(label5);
-        int p6 = Integer.parseInt(label6);
-
-        int p7 = Integer.parseInt(label7);
-        int p8 = Integer.parseInt(label8);
-        int p9 = Integer.parseInt(label9);
+        int p7 = Integer.parseInt(quitarSimboloRaiz(label7));
+        int p8 = Integer.parseInt(quitarSimboloRaiz(label8));
 
         //obtener respuesta1Usuario
         int respuesta1Usuario = Integer.parseInt(result1Usu);
@@ -321,7 +342,7 @@ public class PreguntaMedio extends javax.swing.JFrame {
         //verificar
         int respCorrecta1 = p2 * p3 + p1;
         int respCorrecta2 = p4 / p5 * p6;
-        int respCorrecta3 = p7 - p8 / p9;
+        int respCorrecta3 = p7 - p8;
 
         if (respuesta1Usuario == respCorrecta1 && respuesta2Usuario == respCorrecta2
                 && respuesta3Usuario == respCorrecta3) {
@@ -336,15 +357,13 @@ public class PreguntaMedio extends javax.swing.JFrame {
                 acu = 0;
             }
         }
-
-
     }//GEN-LAST:event_jButtonAceptarPreguntasActionPerformed
 
     private void actualizarLabel() {
         Random r1 = new Random();
         boolean verificado = false;
         
-        //primera operacion, l1+l2*l3
+        //primera raiz
         int num1 = r1.nextInt(50) + 1;
         int num2 = r1.nextInt(30) + 1;
         int num3 = r1.nextInt(40) + 1;
@@ -382,64 +401,109 @@ public class PreguntaMedio extends javax.swing.JFrame {
         String label7 = "" + num7;
         String label8 = "" + num8;
         String label9 = "" + num9;
-
-        //coversion de los label
-        //primera operacion
-        jLabelnum1.setText(label1);
-        jLabelnum2.setText(label2);
-        jLabelnum3.setText(label3);
-        //segunda operacion
-        jLabelnum4div1.setText(label4);
-        jLabelnum5div1.setText(label5);
-        jLabelnum6.setText(label6);
         
-        //tercera operacion
-        jLabelnum7resta1.setText(label7);
-        jLabelnum8div2.setText(label8);
-        jLabelnum9div2.setText(label9);
+        //coversion de los label
+        //primera raiz sola
+        jLabelRaizSola1.setText(label1);
+        //segunda raiz sola
+        jLabelRaizSola2.setText(label2);
+        //tercera raiz sola
+        jLabelRaizSola3.setText(label3);
+        //cuarta raiz sola
+        jLabelRaizSola4.setText(label4);
+        
+        // suma
+        jLabelPrimeraRaizSuma.setText(label5);
+        jLabelSegundaRaizSuma.setText(label6);
+        
+        // multiplicacion
+        jLabelPrimeraRaizMulti.setText(label7);
+        jLabelSegundaRaizMulti.setText(label8);
+    }
+    
+    public static String quitarSimboloRaiz(String s) {
+        if (s.startsWith("√")) {
+            return s.substring(1);
+        } else {
+            return s;
+        }
+    }
+    
+    public static int generaRaiz(int min, int max) {
+	Random rand = new Random();
+	int numRand;
+	int perfectSquare = 0;
 
+	do {
+            // Genera un número aleatorio dentro del rango especificado
+            numRand = rand.nextInt(max - min + 1) + min;
+            // Comprueba si la raíz cuadrada es un número entero
+            if (esRaizExacta(numRand)) {
+                    perfectSquare = numRand;
+            }
+	} while (perfectSquare == 0);
+
+	return perfectSquare;
+    }
+    
+    public static boolean esRaizExacta(int n) {
+	int sqrt = (int) Math.sqrt(n);
+	return sqrt * sqrt == n;
     }
 
-    private void jTextFieldRespuestaSumaMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaSumaMultiActionPerformed
+    private void jTextFieldRespuestaRaizSola2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRaizSola2ActionPerformed
 
 
-    }//GEN-LAST:event_jTextFieldRespuestaSumaMultiActionPerformed
+    }//GEN-LAST:event_jTextFieldRespuestaRaizSola2ActionPerformed
 
-    private void jTextFieldRespuestaRestaDiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRestaDiviActionPerformed
+    private void jTextFieldRespuestaDiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaDiviActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldRespuestaRestaDiviActionPerformed
+    }//GEN-LAST:event_jTextFieldRespuestaDiviActionPerformed
 
-    private void jTextFieldRespuestaDiviMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaDiviMultiActionPerformed
+    private void jTextFieldRespuestaSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaSumaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldRespuestaDiviMultiActionPerformed
+    }//GEN-LAST:event_jTextFieldRespuestaSumaActionPerformed
+
+    private void jTextFieldRespuestaRaizSola1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRaizSola1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldRespuestaRaizSola1ActionPerformed
+
+    private void jTextFieldRespuestaRaizSola3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRaizSola3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldRespuestaRaizSola3ActionPerformed
+
+    private void jTextFieldRespuestaRaizSola4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRespuestaRaizSola4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldRespuestaRaizSola4ActionPerformed
 
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel igual1;
+    private javax.swing.JLabel igual3;
+    private javax.swing.JLabel igual4;
+    private javax.swing.JLabel igual5;
+    private javax.swing.JLabel igual6;
     private javax.swing.JButton jButtonAceptarPreguntas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabelnum1;
-    private javax.swing.JLabel jLabelnum2;
-    private javax.swing.JLabel jLabelnum3;
-    private javax.swing.JLabel jLabelnum4div1;
-    private javax.swing.JLabel jLabelnum5div1;
-    private javax.swing.JLabel jLabelnum6;
-    private javax.swing.JLabel jLabelnum7resta1;
-    private javax.swing.JLabel jLabelnum8div2;
-    private javax.swing.JLabel jLabelnum9div2;
-    private javax.swing.JTextField jTextFieldRespuestaDiviMulti;
-    private javax.swing.JTextField jTextFieldRespuestaRestaDivi;
-    private javax.swing.JTextField jTextFieldRespuestaSumaMulti;
-    private javax.swing.JLabel signo;
+    private javax.swing.JLabel jLabelPrimeraRaizMulti;
+    private javax.swing.JLabel jLabelPrimeraRaizSuma;
+    private javax.swing.JLabel jLabelRaizSola1;
+    private javax.swing.JLabel jLabelRaizSola2;
+    private javax.swing.JLabel jLabelRaizSola3;
+    private javax.swing.JLabel jLabelRaizSola4;
+    private javax.swing.JLabel jLabelSegundaRaizMulti;
+    private javax.swing.JLabel jLabelSegundaRaizSuma;
+    private javax.swing.JTextField jTextFieldRespuestaDivi;
+    private javax.swing.JTextField jTextFieldRespuestaRaizSola1;
+    private javax.swing.JTextField jTextFieldRespuestaRaizSola2;
+    private javax.swing.JTextField jTextFieldRespuestaRaizSola3;
+    private javax.swing.JTextField jTextFieldRespuestaRaizSola4;
+    private javax.swing.JTextField jTextFieldRespuestaSuma;
     private javax.swing.JLabel signo1;
     private javax.swing.JLabel signo2;
-    private javax.swing.JLabel signo3;
-    private javax.swing.JLabel signo4;
-    private javax.swing.JLabel signo5;
     // End of variables declaration//GEN-END:variables
 }
