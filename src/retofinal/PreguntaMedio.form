@@ -28,13 +28,13 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="19" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                              <Component id="jTextFieldRespuestaRaizSola1" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="jTextFieldRespuestaRaizSola1" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabelRaizSola1" min="-2" pref="40" max="-2" attributes="0"/>
@@ -44,9 +44,9 @@
                       </Group>
                       <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
                       <Component id="jLabelRaizSola2" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="jTextFieldRespuestaRaizSola2" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -55,12 +55,12 @@
                               <Component id="jLabelPrimeraRaizMulti" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Component id="signo2" min="-2" pref="40" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Component id="jLabelSegundaRaizMulti" min="-2" pref="40" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Component id="igual6" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jTextFieldRespuestaDivi" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="jTextFieldRespuestaMulti" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                               <Component id="jLabelRaizSola4" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
@@ -76,39 +76,39 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel1" min="-2" pref="155" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <Component id="igual5" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="igual5" min="-2" pref="38" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jTextFieldRespuestaSuma" min="-2" pref="40" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                       <Component id="jLabelRaizSola3" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Component id="igual3" min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jTextFieldRespuestaRaizSola3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="jTextFieldRespuestaRaizSola4" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
               <Component id="jButtonAceptarPreguntas" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="32" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
@@ -121,7 +121,7 @@
                                           <Component id="jLabelRaizSola2" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="igual1" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <Component id="jTextFieldRespuestaRaizSola1" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <Component id="jTextFieldRespuestaRaizSola1" alignment="1" max="32767" attributes="0"/>
                                       <Component id="jLabelRaizSola1" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -137,41 +137,36 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="igual5" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                              <Component id="jTextFieldRespuestaSuma" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jTextFieldRespuestaSuma" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabelPrimeraRaizMulti" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="signo2" min="-2" pref="60" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="igual6" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="igual4" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jLabelRaizSola4" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jTextFieldRespuestaDivi" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jTextFieldRespuestaRaizSola4" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
+                          <Component id="jLabelPrimeraRaizMulti" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="signo2" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="jLabelSegundaRaizMulti" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="igual5" min="-2" pref="60" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="igual6" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="igual4" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="jLabelRaizSola4" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRespuestaMulti" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRespuestaRaizSola4" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Component id="jButtonAceptarPreguntas" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -211,14 +206,14 @@
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextFieldRespuestaDivi">
+    <Component class="javax.swing.JTextField" name="jTextFieldRespuestaMulti">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="18" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRespuestaDiviActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRespuestaMultiActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="signo2">
