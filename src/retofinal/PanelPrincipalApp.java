@@ -156,7 +156,8 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
         
         if(alias == null || contrasena == null ||"".equals(alias) ||
                 "".equals(contrasena)){ 
-            JOptionPane.showMessageDialog(this, "El campo no puede estar vacio", "Error",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El campo no"
+                    + " puede estar vacio", "Error",JOptionPane.ERROR_MESSAGE);
             return false;
         }else{
             return true;
