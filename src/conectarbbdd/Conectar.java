@@ -63,4 +63,34 @@ public class Conectar {
     public String getError(){
         return error;
     }
+    
+    private Statement miStatement=null;
+    public boolean insertarActualizarRegistros(String consultaSQL) {
+        try {
+            // Creamos el objeto Statement.
+            miStatement=conex.createStatement();
+            // Ejecutamos el objeto pasandole la consulta
+            // que se le está pasando por parámetro.
+            miStatement.executeUpdate(consultaSQL);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+            return false;
+        }
+        return true;
+    }
+    private ResultSet miResultSet = null;
+    public ResultSet consultarDatos(String consultaSQL){     
+        try {
+            // Creamos el objeto Statement.
+            miStatement=conex.createStatement();
+            // Asignamos la ejecución de la consulta al objeto ResultSet
+            miResultSet=miStatement.executeQuery(consultaSQL);
+        } catch (Exception e) {
+            // Si hay errores no devolvemos nada
+            System.out.println(e.getMessage());
+            return null;
+        }
+        //Si todo va bien devolvemos el resultset
+        return miResultSet;
+    }
 }
