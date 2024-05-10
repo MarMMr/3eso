@@ -84,8 +84,8 @@ public class LlaveDificil extends javax.swing.JFrame {
 
         jLabelSigno1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelSigno1.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelSigno1.setText("/");
-        jPanel1.add(jLabelSigno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 20, 40));
+        jLabelSigno1.setText("+");
+        jPanel1.add(jLabelSigno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 30, 40));
 
         jLabelNum2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelNum2.setForeground(new java.awt.Color(240, 240, 240));

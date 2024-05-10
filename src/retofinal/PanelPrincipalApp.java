@@ -168,7 +168,9 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
     private void jButtonAceptarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarSesionActionPerformed
         Cronometro crono = new Cronometro();
         int nivel = jComboBoxNivel.getSelectedIndex();
-        PreguntaFacil pFacil = new PreguntaFacil();
+        PuertaFacil pFacil = new PuertaFacil();
+        PuertaMedio pMedio = new PuertaMedio();
+        PuertaDificil pDificil = new PuertaDificil();
         if(validarInicio()){
             setVisible(false);
             crono.setVisible(true);
@@ -176,9 +178,9 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
             if(nivel == 0){
                 pFacil.setVisible(true);
             }else if(nivel == 1){
-                
-            }else{
-                
+                pMedio.setVisible(true);
+            }else {
+                pDificil.setVisible(true);
             }
         }
     }//GEN-LAST:event_jButtonAceptarSesionActionPerformed

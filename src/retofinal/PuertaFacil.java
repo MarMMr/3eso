@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author dam126
  */
-public class PreguntaFacil extends javax.swing.JFrame {
+public class PuertaFacil extends javax.swing.JFrame {
 
     /**
      * Creates new form Preguntas
@@ -31,7 +31,7 @@ public class PreguntaFacil extends javax.swing.JFrame {
 
     private int acu = 0;
 
-    public PreguntaFacil() {
+    public PuertaFacil() {
         initComponents();
         iniciarLabel();
     }

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author dam126
  */
-public class PreguntaMedio extends javax.swing.JFrame {
+public class PuertaMedio extends javax.swing.JFrame {
 
     /**
      * Creates new form Preguntas
@@ -33,7 +33,7 @@ public class PreguntaMedio extends javax.swing.JFrame {
     
     private int acu = 0;
 
-    public PreguntaMedio() {
+    public PuertaMedio() {
         initComponents();
         iniciarLabel();
     }

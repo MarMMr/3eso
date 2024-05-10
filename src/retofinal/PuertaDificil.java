@@ -41,7 +41,6 @@ public class PuertaDificil extends javax.swing.JFrame {
         jLabelFondoPuertaDificil.setIcon(imagenDificil.get(index));
     }
     
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -109,7 +108,6 @@ public class PuertaDificil extends javax.swing.JFrame {
         l1.setVisible(true);
     }//GEN-LAST:event_jButtonActionPerformed
 
-    
     /**
      * @param args the command line arguments
      */
