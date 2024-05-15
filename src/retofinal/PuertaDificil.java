@@ -69,26 +69,23 @@ public class PuertaDificil extends javax.swing.JFrame {
         PanelInutilFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButtonSalirDificil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoSalir.png"))); // NOI18N
-        jButtonSalirDificil.setBorder(null);
-        jButtonSalirDificil.setBorderPainted(false);
-        jButtonSalirDificil.setContentAreaFilled(false);
+        jButtonSalirDificil.setText("Salir");
+        jButtonSalirDificil.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonSalirDificil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalirDificilActionPerformed(evt);
             }
         });
-        PanelInutilFondo.add(jButtonSalirDificil, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 610, 60, 40));
+        PanelInutilFondo.add(jButtonSalirDificil, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 620, 100, 40));
 
         jButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoLlave-removebg-preview.png"))); // NOI18N
-        jButton.setBorder(null);
-        jButton.setBorderPainted(false);
-        jButton.setContentAreaFilled(false);
+        jButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonActionPerformed(evt);
             }
         });
-        PanelInutilFondo.add(jButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, -1, -1));
+        PanelInutilFondo.add(jButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 60, 60));
 
         jLabelFondoPuertaDificil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PuertaNivelDificil.png"))); // NOI18N
         PanelInutilFondo.add(jLabelFondoPuertaDificil, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 690));
