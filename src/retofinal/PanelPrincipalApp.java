@@ -15,6 +15,9 @@ import javax.swing.Timer;
  */
 public class PanelPrincipalApp extends javax.swing.JFrame {
 
+    String nombres;
+    String level;
+    
     /**
      * Creates new form PanelPrincipalApp
      */
@@ -24,6 +27,14 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
         
     }
     
+    public void xml(String nomb, String contarss) throws Exception{
+        GenerarDom generar = new GenerarDom();
+        generar.setFilePathToDesktop();
+
+        generar.generarDocument(nomb, contarss);
+        generar.generarXml();
+
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -166,22 +177,34 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
     }
     
     private void jButtonAceptarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarSesionActionPerformed
-        Cronometro crono = new Cronometro();
-        int nivel = jComboBoxNivel.getSelectedIndex();
-        PuertaFacil pFacil = new PuertaFacil();
-        PuertaMedio pMedio = new PuertaMedio();
-        PuertaDificil pDificil = new PuertaDificil();
-        if(validarInicio()){
-            setVisible(false);
-            crono.setVisible(true);
-            crono.getTiempo().start();
-            if(nivel == 0){
-                pFacil.setVisible(true);
-            }else if(nivel == 1){
-                pMedio.setVisible(true);
-            }else {
-                pDificil.setVisible(true);
+        try {
+            int nivel = jComboBoxNivel.getSelectedIndex();
+            System.out.println(nivel);
+            nombres = jTextFieldAliasSesion.getText();
+            level = jComboBoxNivel.getSelectedItem()+"";
+
+            xml(nombres, level);
+
+            PuertaFacil pFacil = new PuertaFacil();
+
+            PuertaMedio pMedio = new PuertaMedio();
+            PuertaDificil pDificil = new PuertaDificil();;
+            if(validarInicio()){
+                setVisible(false);
+                Cronometro crono = new Cronometro();
+                crono.setVisible(true);
+                crono.getTiempo().start();
+                if(nivel == 0){
+                    pFacil.setVisible(true);
+                }else if(nivel == 1){
+                    pMedio.setVisible(true);
+
+                }else{
+                    pDificil.setVisible(true);
+                }
             }
+        } catch (Exception ex) {
+            System.out.println("no se pudo iniciar sesion");
         }
     }//GEN-LAST:event_jButtonAceptarSesionActionPerformed
 

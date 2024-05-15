@@ -51,17 +51,17 @@ public class LlaveDificil extends javax.swing.JFrame {
             int[] currentDivisor = new int[]{num5, num4};
     }
 
-    private int[] dividePolynomials(int[] dividend, int[] divisor) {
+    private int[] divisionPolinomios(int[] dividend, int[] divisor) {
         int divisorDegree = divisor.length - 1;
-        int dividendDegree = dividend.length - 1;
-        int[] quotient = new int[dividendDegree - divisorDegree + 1];
+        int dividendoDegree = dividend.length - 1;
+        int[] quotient = new int[dividendoDegree - divisorDegree + 1];
         int[] remainder = Arrays.copyOf(dividend, dividend.length);
 
-        for (int i = dividendDegree; i >= divisorDegree; i--) {
-            int coef = remainder[i] / divisor[divisorDegree];
-            quotient[i - divisorDegree] = coef;
+        for (int i = dividendoDegree; i >= divisorDegree; i--) {
+            int coeficiente = remainder[i] / divisor[divisorDegree];
+            quotient[i - divisorDegree] = coeficiente;
             for (int j = 0; j <= divisorDegree; j++) {
-                remainder[i - j] -= coef * divisor[divisorDegree - j];
+                remainder[i - j] -= coeficiente * divisor[divisorDegree - j];
             }
         }
         return quotient;
@@ -88,7 +88,6 @@ public class LlaveDificil extends javax.swing.JFrame {
         jLabelDividendo1 = new javax.swing.JLabel();
         jLabelSigno4 = new javax.swing.JLabel();
         jLabelDividendo = new javax.swing.JLabel();
-        jLabel2Cuadrado = new javax.swing.JLabel();
         jButtonInsertarDificil = new javax.swing.JButton();
         jLabelBarrasBajas = new javax.swing.JLabel();
         jLabelFondoLlaveDificil = new javax.swing.JLabel();
@@ -99,33 +98,33 @@ public class LlaveDificil extends javax.swing.JFrame {
 
         jLabelDivisor1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelDivisor1.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelDivisor1.setText("6x");
-        jPanel1.add(jLabelDivisor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 60));
+        jLabelDivisor1.setText("6");
+        jPanel1.add(jLabelDivisor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 50));
 
         jLabelSigno1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelSigno1.setForeground(new java.awt.Color(240, 240, 240));
         jLabelSigno1.setText("+");
-        jPanel1.add(jLabelSigno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 30, 40));
+        jPanel1.add(jLabelSigno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 30, 40));
 
         jLabelDivisor2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelDivisor2.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDivisor2.setText("3x");
-        jPanel1.add(jLabelDivisor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 40, 50));
+        jPanel1.add(jLabelDivisor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 40, 50));
 
         jLabelsigno2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelsigno2.setForeground(new java.awt.Color(240, 240, 240));
         jLabelsigno2.setText("-");
-        jPanel1.add(jLabelsigno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 30, 40));
+        jPanel1.add(jLabelsigno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 30, 40));
 
         jLabelDivisor3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelDivisor3.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDivisor3.setText("9");
-        jPanel1.add(jLabelDivisor3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 30, 50));
+        jPanel1.add(jLabelDivisor3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 30, 50));
 
         jLabelSigno3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelSigno3.setForeground(new java.awt.Color(240, 240, 240));
         jLabelSigno3.setText("=");
-        jPanel1.add(jLabelSigno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 30, 50));
+        jPanel1.add(jLabelSigno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 30, 50));
 
         jTextFieldResultado1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jTextFieldResultado1.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +132,7 @@ public class LlaveDificil extends javax.swing.JFrame {
                 jTextFieldResultado1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextFieldResultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 40, 60));
+        jPanel1.add(jTextFieldResultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 40, 60));
 
         jLabelDividendo1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelDividendo1.setForeground(new java.awt.Color(240, 240, 240));
@@ -150,11 +149,6 @@ public class LlaveDificil extends javax.swing.JFrame {
         jLabelDividendo.setText("2");
         jPanel1.add(jLabelDividendo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
 
-        jLabel2Cuadrado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2Cuadrado.setForeground(new java.awt.Color(240, 240, 240));
-        jLabel2Cuadrado.setText("2");
-        jPanel1.add(jLabel2Cuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 30, -1));
-
         jButtonInsertarDificil.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButtonInsertarDificil.setText("Insertar");
         jButtonInsertarDificil.setBorder(null);
@@ -169,7 +163,7 @@ public class LlaveDificil extends javax.swing.JFrame {
 
         jLabelBarrasBajas.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelBarrasBajas.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelBarrasBajas.setText("________________");
+        jLabelBarrasBajas.setText("___________________");
         jPanel1.add(jLabelBarrasBajas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 190, -1));
 
         jLabelFondoLlaveDificil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LlaveNivelDificil7.png"))); // NOI18N
@@ -191,13 +185,13 @@ public class LlaveDificil extends javax.swing.JFrame {
 
     private void jButtonInsertarDificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertarDificilActionPerformed
         try {
-            int[] dividend = {Integer.parseInt(jLabelDivisor3.getText()), 
+            int[] dividendo = {Integer.parseInt(jLabelDivisor3.getText()), 
                               Integer.parseInt(jLabelDivisor2.getText().split("x")[0]),
                               Integer.parseInt(jLabelDivisor1.getText().split("x")[0])};
             int[] divisor = {Integer.parseInt(jLabelDividendo.getText()), 
                              Integer.parseInt(jLabelDividendo1.getText().split("x")[0])};
 
-            int[] quotient = dividePolynomials(dividend, divisor);
+            int[] quotient = divisionPolinomios(dividendo, divisor);
 
             int respuestaUsuario = Integer.parseInt(jTextFieldResultado1.getText());
             int respuestaCorrecta = quotient[0];  // Solo consideramos el término líder del cociente
@@ -265,7 +259,6 @@ public class LlaveDificil extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonInsertarDificil;
-    private javax.swing.JLabel jLabel2Cuadrado;
     private javax.swing.JLabel jLabelBarrasBajas;
     private javax.swing.JLabel jLabelDividendo;
     private javax.swing.JLabel jLabelDividendo1;
