@@ -25,7 +25,7 @@ import org.w3c.dom.Element;
 public class GenerarDom {
     private Document document;
     private PanelPrincipalApp panel;
-    private File file ;
+    private File file;
     private int acu = 0;
 
     public GenerarDom() throws Exception  {
@@ -38,9 +38,10 @@ public class GenerarDom {
     public void setFilePathToDesktop() {
         String userHome = System.getProperty("user.home");
         //String desktopPath = userHome + File.separator + "OneDrive" + File.separator + "Escritorio" + File.separator + "usuarios.xml";
-        file = new File("C:\\Users\\DAM117\\Downloads");
+        file = new File("C:\\Users\\DAM117\\Downloads\\usuarios.xml");
     }
-public void generarDocument(String users, String nivel){
+    
+    public void generarDocument(String users, String nivel){
         Element usuariosRegistrados = document.createElement("usuarios");
         document.appendChild(usuariosRegistrados);
 

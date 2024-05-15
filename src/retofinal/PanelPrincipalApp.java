@@ -179,16 +179,16 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
     private void jButtonAceptarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarSesionActionPerformed
         try {
             int nivel = jComboBoxNivel.getSelectedIndex();
-            System.out.println(nivel);
+            
             nombres = jTextFieldAliasSesion.getText();
             level = jComboBoxNivel.getSelectedItem()+"";
 
             xml(nombres, level);
-
+            System.out.println(nivel);
             PuertaFacil pFacil = new PuertaFacil();
 
             PuertaMedio pMedio = new PuertaMedio();
-            PuertaDificil pDificil = new PuertaDificil();;
+            PuertaDificil pDificil = new PuertaDificil();
             if(validarInicio()){
                 setVisible(false);
                 Cronometro crono = new Cronometro();
