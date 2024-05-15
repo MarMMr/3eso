@@ -181,9 +181,8 @@ public class PanelPrincipalApp extends javax.swing.JFrame {
             int nivel = jComboBoxNivel.getSelectedIndex();
             System.out.println(nivel);
             nombres = jTextFieldAliasSesion.getText();
-            level = jComboBoxNivel.getSelectedItem()+"";
+            level = (String) jComboBoxNivel.getSelectedItem();
             xml(nombres, level);
-            
             PuertaFacil pFacil = new PuertaFacil();
 
             PuertaMedio pMedio = new PuertaMedio();

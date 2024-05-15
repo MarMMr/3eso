@@ -18,8 +18,6 @@ public class App_3Eso {
         PanelPrincipalApp p1 = new PanelPrincipalApp();
         p1.setVisible(true);
         
-        
-        
     }
     
 }
