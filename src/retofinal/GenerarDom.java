@@ -1,7 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+*/
 package retofinal;
 
 import java.io.File;
@@ -19,8 +19,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
- *
- 
+ * 
 @author juyin*/
 public class GenerarDom {
     private Document document;
