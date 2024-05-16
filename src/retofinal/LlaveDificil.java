@@ -190,17 +190,24 @@ public class LlaveDificil extends javax.swing.JFrame {
             String respuestaUsuario = jTextFieldResultado1.getText();
 
             // Definimos la expresión regular para el formato esperado
-            Pattern pattern = Pattern.compile("^(-?\\d+/\\d+|\\d+)\\s*x\\s*\\+\\s*(-?\\d+/\\d+|\\d+)$");
+            Pattern pattern = Pattern.compile("^(-?\\d+/\\d+|\\d+)\\s*x\\s*([-+])\\s*(-?\\d+/\\d+|\\d+)$");
             Matcher matcher = pattern.matcher(respuestaUsuario);
 
             if (matcher.matches()) {
                 // Si coincide con el patrón, extraemos los términos
                 String coefXString = matcher.group(1);
-                String terminoConstanteString = matcher.group(2);
+                String operador = matcher.group(2);
+                String terminoConstanteString = matcher.group(3);
 
                 // Convertimos las fracciones a números decimales
                 double coefX = convertToDecimal(coefXString);
                 double terminoConstante = convertToDecimal(terminoConstanteString);
+                
+                if (operador.equals("+")) {
+                    terminoConstante *= 1;
+                } else if (operador.equals("-")) {
+                    terminoConstante *= -1;
+                }
 
                 // Comparamos los términos extraídos con los términos correctos
                 if (Math.abs(coefX - quotient[0]) < 1e-9 && Math.abs(terminoConstante - quotient[1]) < 1e-9) {
@@ -219,6 +226,11 @@ public class LlaveDificil extends javax.swing.JFrame {
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Por favor ingresa la respuesta en el formato 'un número x + un número' o 'un número/un número x + un número/un número'.", "Error de Formato", JOptionPane.ERROR_MESSAGE);
+                acu++;
+                    if (acu == 3) {
+                        setVisible(false);
+                        new FinPartida().setVisible(true);
+                    }
             }
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Por favor ingresa solo números válidos.", "Error de Formato", JOptionPane.ERROR_MESSAGE);
