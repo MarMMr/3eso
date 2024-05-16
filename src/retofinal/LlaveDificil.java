@@ -33,14 +33,16 @@ public class LlaveDificil extends javax.swing.JFrame {
     }
 
     private void actualizarLabel() {
-        int num1 = random.nextInt(10) + 1;
-        int num2 = random.nextInt(10) + 1;
-        int num3 = random.nextInt(10) + 1;
-        int num4 = random.nextInt(10) + 1;
-        int num5;
+        int num1, num2, num3, num4, num5;
         do {
-            num5 = random.nextInt(10) + 1;
-        } while (num4 % num5 != 0); 
+            num1 = random.nextInt(100) + 1;
+            num2 = random.nextInt(100) + 1;
+            num3 = random.nextInt(100) + 1;
+            num4 = random.nextInt(10) + 1;
+            do {
+                num5 = random.nextInt(10) + 1;
+            } while (num4 % num5 != 0); 
+        } while (num3 * num5 - num1 * num4 * num5 - num2 * num4 != 0 || num1 % num5 != 0);
 
         jLabelDivisor1.setText(num1 + "x^2 +");
         jLabelDivisor2.setText(num2 + "x +");
@@ -48,6 +50,7 @@ public class LlaveDificil extends javax.swing.JFrame {
         jLabelDividendo1.setText(num4 + "x +");
         jLabelDividendo.setText(String.valueOf(num5));
     }
+
 
     private int[] divisionPolinomios(int[] dividend, int[] divisor) {
         int divisorDegree = divisor.length - 1;
