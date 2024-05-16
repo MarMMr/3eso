@@ -77,5 +77,4 @@ public class Validar {
 
         return correo;
     }
-
  }

@@ -33,9 +33,9 @@ public class LlaveDificil extends javax.swing.JFrame {
     }
 
     private void actualizarLabel() {
-        int num1 = random.nextInt(20) + 1;
-        int num2 = random.nextInt(20) + 1;
-        int num3 = random.nextInt(20) + 1;
+        int num1 = random.nextInt(10) + 1;
+        int num2 = random.nextInt(10) + 1;
+        int num3 = random.nextInt(10) + 1;
         int num4 = random.nextInt(10) + 1;
         int num5;
         do {
