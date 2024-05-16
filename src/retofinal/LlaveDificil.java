@@ -7,6 +7,8 @@ package retofinal;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
@@ -20,25 +22,24 @@ public class LlaveDificil extends javax.swing.JFrame {
      * Creates new form LlaveMedio
      */
     
-    private int acu = 0;
     private int salas = 0;
+    private int acu = 0;
     private List<Icon> imagenRandom;
     private Random random = new Random();
-    
+
     public LlaveDificil() {
         initComponents();
         actualizarLabel();
     }
-    
+
     private void actualizarLabel() {
-        Random random = new Random();
-        int num1 = random.nextInt(50) + 1;
-        int num2 = random.nextInt(50) + 1;
-        int num3 = random.nextInt(50) + 1;
-        int num4 = random.nextInt(15) + 1;
+        int num1 = random.nextInt(20) + 1;
+        int num2 = random.nextInt(20) + 1;
+        int num3 = random.nextInt(20) + 1;
+        int num4 = random.nextInt(10) + 1;
         int num5;
         do {
-            num5 = random.nextInt(20) + 1;
+            num5 = random.nextInt(10) + 1;
         } while (num4 % num5 != 0); 
 
         jLabelDivisor1.setText(num1 + "x^2 +");
@@ -46,9 +47,6 @@ public class LlaveDificil extends javax.swing.JFrame {
         jLabelDivisor3.setText(String.valueOf(num3));
         jLabelDividendo1.setText(num4 + "x +");
         jLabelDividendo.setText(String.valueOf(num5));
-        
-        int[] currentDividendo = new int[]{num3, num2, num1};
-            int[] currentDivisor = new int[]{num5, num4};
     }
 
     private int[] divisionPolinomios(int[] dividend, int[] divisor) {
@@ -66,6 +64,15 @@ public class LlaveDificil extends javax.swing.JFrame {
         }
         return quotient;
     }
+    
+    private double convertToDecimal(String numberString) {
+        if (numberString.contains("/")) {
+            String[] parts = numberString.split("/");
+            return Double.parseDouble(parts[0]) / Double.parseDouble(parts[1]);
+        } else {
+            return Double.parseDouble(numberString);
+        }
+    }
 
     
     /**
@@ -79,14 +86,11 @@ public class LlaveDificil extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabelDivisor1 = new javax.swing.JLabel();
-        jLabelSigno1 = new javax.swing.JLabel();
+        jTextFieldResultado1 = new javax.swing.JTextField();
         jLabelDivisor2 = new javax.swing.JLabel();
-        jLabelsigno2 = new javax.swing.JLabel();
         jLabelDivisor3 = new javax.swing.JLabel();
         jLabelSigno3 = new javax.swing.JLabel();
-        jTextFieldResultado1 = new javax.swing.JTextField();
         jLabelDividendo1 = new javax.swing.JLabel();
-        jLabelSigno4 = new javax.swing.JLabel();
         jLabelDividendo = new javax.swing.JLabel();
         jButtonInsertarDificil = new javax.swing.JButton();
         jLabelBarrasBajas = new javax.swing.JLabel();
@@ -96,58 +100,43 @@ public class LlaveDificil extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelDivisor1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabelDivisor1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelDivisor1.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDivisor1.setText("6");
-        jPanel1.add(jLabelDivisor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 50));
+        jPanel1.add(jLabelDivisor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 120, 50));
 
-        jLabelSigno1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jLabelSigno1.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelSigno1.setText("+");
-        jPanel1.add(jLabelSigno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 30, 40));
+        jTextFieldResultado1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jTextFieldResultado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldResultado1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextFieldResultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 130, 40));
 
-        jLabelDivisor2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabelDivisor2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelDivisor2.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDivisor2.setText("3x");
-        jPanel1.add(jLabelDivisor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 40, 50));
+        jPanel1.add(jLabelDivisor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 90, 50));
 
-        jLabelsigno2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jLabelsigno2.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelsigno2.setText("-");
-        jPanel1.add(jLabelsigno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 30, 40));
-
-        jLabelDivisor3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabelDivisor3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelDivisor3.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDivisor3.setText("9");
-        jPanel1.add(jLabelDivisor3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 30, 50));
+        jPanel1.add(jLabelDivisor3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 40, 50));
 
         jLabelSigno3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelSigno3.setForeground(new java.awt.Color(240, 240, 240));
         jLabelSigno3.setText("=");
         jPanel1.add(jLabelSigno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 30, 50));
 
-        jTextFieldResultado1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jTextFieldResultado1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldResultado1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextFieldResultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 40, 60));
-
-        jLabelDividendo1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabelDividendo1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelDividendo1.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDividendo1.setText("5x");
-        jPanel1.add(jLabelDividendo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 50, -1));
+        jPanel1.add(jLabelDividendo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 110, -1));
 
-        jLabelSigno4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        jLabelSigno4.setForeground(new java.awt.Color(240, 240, 240));
-        jLabelSigno4.setText("+");
-        jPanel1.add(jLabelSigno4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
-
-        jLabelDividendo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabelDividendo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabelDividendo.setForeground(new java.awt.Color(240, 240, 240));
         jLabelDividendo.setText("2");
-        jPanel1.add(jLabelDividendo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+        jPanel1.add(jLabelDividendo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 60, -1));
 
         jButtonInsertarDificil.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButtonInsertarDificil.setText("Insertar");
@@ -185,30 +174,51 @@ public class LlaveDificil extends javax.swing.JFrame {
 
     private void jButtonInsertarDificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertarDificilActionPerformed
         try {
-            int[] dividendo = {Integer.parseInt(jLabelDivisor3.getText()), 
-                              Integer.parseInt(jLabelDivisor2.getText().split("x")[0]),
-                              Integer.parseInt(jLabelDivisor1.getText().split("x")[0])};
-            int[] divisor = {Integer.parseInt(jLabelDividendo.getText()), 
-                             Integer.parseInt(jLabelDividendo1.getText().split("x")[0])};
+            int[] dividendo = {
+                Integer.parseInt(jLabelDivisor3.getText()), 
+                Integer.parseInt(jLabelDivisor2.getText().split("x")[0]),
+                Integer.parseInt(jLabelDivisor1.getText().split("x")[0])
+            };
+            int[] divisor = {
+                Integer.parseInt(jLabelDividendo.getText()), 
+                Integer.parseInt(jLabelDividendo1.getText().split("x")[0])
+            };
 
             int[] quotient = divisionPolinomios(dividendo, divisor);
 
-            int respuestaUsuario = Integer.parseInt(jTextFieldResultado1.getText());
-            int respuestaCorrecta = quotient[0];  // Solo consideramos el término líder del cociente
+            // Obtenemos la respuesta del usuario
+            String respuestaUsuario = jTextFieldResultado1.getText();
 
-            if (respuestaUsuario == respuestaCorrecta) {
-                JOptionPane.showMessageDialog(this, "Respuesta correcta");
-                actualizarLabel();
-                salas+=1;
-                setVisible(false);
-                new PuertaDificil().setVisible(true);
-            } else {
-                JOptionPane.showMessageDialog(this, "Respuesta Incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
-                acu++;
-                if (acu == 3) {
+            // Definimos la expresión regular para el formato esperado
+            Pattern pattern = Pattern.compile("^(-?\\d+/\\d+|\\d+)\\s*x\\s*\\+\\s*(-?\\d+/\\d+|\\d+)$");
+            Matcher matcher = pattern.matcher(respuestaUsuario);
+
+            if (matcher.matches()) {
+                // Si coincide con el patrón, extraemos los términos
+                String coefXString = matcher.group(1);
+                String terminoConstanteString = matcher.group(2);
+
+                // Convertimos las fracciones a números decimales
+                double coefX = convertToDecimal(coefXString);
+                double terminoConstante = convertToDecimal(terminoConstanteString);
+
+                // Comparamos los términos extraídos con los términos correctos
+                if (Math.abs(coefX - quotient[0]) < 1e-9 && Math.abs(terminoConstante - quotient[1]) < 1e-9) {
+                    JOptionPane.showMessageDialog(this, "Respuesta correcta");
+                    actualizarLabel();
+                    salas += 1;
                     setVisible(false);
-                    new FinPartida().setVisible(true);
+                    new PuertaDificil().setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Respuesta Incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
+                    acu++;
+                    if (acu == 3) {
+                        setVisible(false);
+                        new FinPartida().setVisible(true);
+                    }
                 }
+            } else {
+                JOptionPane.showMessageDialog(this, "Por favor ingresa la respuesta en el formato 'un número x + un número' o 'un número/un número x + un número/un número'.", "Error de Formato", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Por favor ingresa solo números válidos.", "Error de Formato", JOptionPane.ERROR_MESSAGE);
@@ -266,10 +276,7 @@ public class LlaveDificil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelDivisor2;
     private javax.swing.JLabel jLabelDivisor3;
     private javax.swing.JLabel jLabelFondoLlaveDificil;
-    private javax.swing.JLabel jLabelSigno1;
     private javax.swing.JLabel jLabelSigno3;
-    private javax.swing.JLabel jLabelSigno4;
-    private javax.swing.JLabel jLabelsigno2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFieldResultado1;
     // End of variables declaration//GEN-END:variables

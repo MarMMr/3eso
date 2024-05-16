@@ -113,8 +113,8 @@ public class PuertaMedio extends javax.swing.JFrame {
 
     private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
         setVisible(false);
-        LlaveMedio l1 = new LlaveMedio();
-        l1.setVisible(true);
+        LlaveMedio lm1 = new LlaveMedio();
+        lm1.setVisible(true);
     }//GEN-LAST:event_jButtonActionPerformed
 
     /**

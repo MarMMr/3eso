@@ -113,8 +113,8 @@ public class PuertaFacil extends javax.swing.JFrame {
 
     private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
         setVisible(false);
-        LlaveFacil l1 = new LlaveFacil();
-        l1.setVisible(true);
+        LlaveFacil lf1 = new LlaveFacil();
+        lf1.setVisible(true);
     }//GEN-LAST:event_jButtonActionPerformed
 
     /**
