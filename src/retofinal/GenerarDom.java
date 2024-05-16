@@ -37,7 +37,7 @@ public class GenerarDom {
     public void setFilePathToDesktop() {
         String userHome = System.getProperty("user.home");
         //String desktopPath = userHome + File.separator + "OneDrive" + File.separator + "Escritorio" + File.separator + "usuarios.xml";
-        file = new File("C:\\Users\\DAM117\\Downloads\\usuarios.xml");
+        file = new File("C:\\Users\\DAM117\\Downloads\\wwwcopia\\usuarios.xml");
     }
     
     public void generarDocument(String users, String nivel){
