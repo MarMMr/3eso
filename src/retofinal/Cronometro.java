@@ -5,6 +5,7 @@
 package retofinal;
 
 import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 /**
@@ -49,6 +50,11 @@ public class Cronometro extends javax.swing.JFrame {
         if(minutos == 60){
             minutos = 0;
             horas++;
+        }
+        
+       if (horas == 0 && minutos == 20 && segundos == 0) {
+            JOptionPane.showMessageDialog(this, "Han pasado "
+                    + "20 minutos, recuerda erlajar la vista.");
         }
     }
     
