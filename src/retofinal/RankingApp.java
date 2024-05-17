@@ -142,7 +142,7 @@ public class RankingApp extends javax.swing.JFrame {
 
         BG.add(jPanelExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
 
-        jPanelMove.setBackground(new java.awt.Color(87, 239, 249));
+        jPanelMove.setBackground(new java.awt.Color(127, 200, 249));
         jPanelMove.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 jPanelMoveMouseDragged(evt);
